@@ -21,6 +21,7 @@
   "homepage": "https://github.com/rasoolkhorshidi/Node-JS#readme",
   "description": "",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "git": "^0.1.5"
   }
