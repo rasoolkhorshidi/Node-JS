@@ -11,7 +11,14 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "Home Page" });
+  //decelaration data whit api format
+  const data = {
+    name: "Rasooli",
+    age: 37,
+    job: "Web Developer",
+    skills: ["HTML", "CSS", "JavaScript", "Tailwind", "ReactJS", "Node.js", "Express.js", "MongoDB"],
+  };
+  res.render("index", { title: "Home Page", data: data });
 });
 
 app.get("/about", (req, res) => {

@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about us</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Node.js Project</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasooli | <%= title%>
+  </title>
+</head>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
     <h1>About Us</h1>
     <p>This is the about page of our first Node.js project.</p>
     <p>We are excited to share our journey with you!</p>
@@ -30,45 +24,56 @@
         text-align: center;
         margin-top: 50px;
       }
+
       header {
         background-color: #f8f9fa;
         padding: 20px;
         border-bottom: 1px solid #dee2e6;
       }
+
       nav ul {
         list-style-type: none;
         padding: 0;
       }
+
       nav ul li {
         display: inline;
         margin: 0 15px;
       }
+
       nav ul li a {
         text-decoration: none;
         color: #007bff;
       }
+
       nav ul li a:hover {
         text-decoration: underline;
       }
+
       h1 {
         color: blue;
       }
+
       p {
         margin: 10px 0;
       }
+
       footer {
         margin-top: 20px;
         font-size: 0.8em;
         color: gray;
       }
+
       @media (max-width: 600px) {
         body {
           padding: 20px;
         }
+
         h1 {
           font-size: 24px;
         }
       }
     </style>
-  </body>
+</body>
+
 </html>
