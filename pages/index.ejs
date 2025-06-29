@@ -1,103 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rasooli | <%= title%></title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Rasooli | <%= title%>
-    </title>
-</head>
-
-<body>
+  <body>
     <%- include("./partials/nav.ejs") %>
-        <h1>First Node Project!!</h1>
-        <p>This is the first Node.js project.</p>
-        <p>Welcome to the world of Node.js!</p>
-        <p>Explore the features and capabilities of Node.js.</p>
-        <p>Happy coding!</p>
-        <p>Name:<%= data.name %>
-        </p>
-        <p>Age:<%= data.age %>
-        </p>
-        <p>Job:<%= data.job %>
-        </p>
-        <p>Skills:</p>
-        <ul>
-            <% data.skills.forEach(skill=> { %>
-                <li>
-                    <%= skill %>
-                </li>
-                <% }) %>
-        </ul>
-        <p>Thank you for visiting our site!</p>
-        <footer>
-            <p>&copy; 2023 Your Company Name</p>
-        </footer>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                margin-top: 50px;
-            }
-
-            header {
-                background-color: #f8f9fa;
-                padding: 20px;
-                border-bottom: 1px solid #dee2e6;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin: 0 15px;
-            }
-
-            nav ul li a {
-                text-decoration: none;
-                color: #007bff;
-            }
-
-            nav ul li a:hover {
-                text-decoration: underline;
-            }
-
-            h1 {
-                color: blue;
-            }
-
-            p {
-                margin: 10px 0;
-            }
-
-            footer {
-                margin-top: 20px;
-                font-size: 0.8em;
-                color: gray;
-            }
-
-            @media (max-width: 600px) {
-                body {
-                    padding: 20px;
-                }
-
-                h1 {
-                    font-size: 24px;
-                }
-            }
-
-            a {
-                color: blue;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
-</body>
-
+    <h1>First Node Project!!</h1>
+    <p>This is the first Node.js project.</p>
+    <p>Welcome to the world of Node.js!</p>
+    <p>Explore the features and capabilities of Node.js.</p>
+    <p>Happy coding!</p>
+    <p>Name:<%= data.name %></p>
+    <p>Age:<%= data.age %></p>
+    <p>Job:<%= data.job %></p>
+    <p>Skills:</p>
+    <ul>
+      <% data.skills.forEach(skill=> { %>
+      <li><%= skill %></li>
+      <% }) %>
+    </ul>
+    <p>Thank you for visiting our site!</p>
+    <footer>
+      <p>&copy; 2023 Your Company Name</p>
+    </footer>
+    <style></style>
+  </body>
 </html>
